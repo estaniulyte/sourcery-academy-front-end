@@ -62,6 +62,7 @@ const Login = () => {
                 id="email"
                 name="email"
                 placeholder="email"
+                autoComplete="username"
                 value={inputValues.email}
                 onChange={handleChange}
                 isError={loginFailed}
@@ -74,6 +75,7 @@ const Login = () => {
                 id="password"
                 name="password"
                 placeholder="password"
+                autoComplete="current-password"
                 value={inputValues.password}
                 onChange={handleChange}
                 isError={loginFailed}

@@ -7,9 +7,7 @@ import Loader from "components/loader";
 import PropTypes from "prop-types";
 import "./hero-slider.scss";
 
-const HeroSlider = ({ restaurants }) => {
-  const [isLoading, setIsLoading] = useState(false);
-
+const HeroSlider = ({ restaurants, isLoading }) => {
   const [fiveRestaurants, setFiveRestaurants] = useState([]);
 
   const [currRestaurant, setCurrRestaurant] = useState({});
@@ -35,7 +33,6 @@ const HeroSlider = ({ restaurants }) => {
   const iconsArr = [0, 1, 2, 3, 4];
 
   useEffect(() => {
-    setIsLoading(true);
     if (restaurants.length > 0) {
       while (fiveRestaurants.length < 5) {
         const randomRestaurant =
@@ -53,7 +50,6 @@ const HeroSlider = ({ restaurants }) => {
         fiveRestaurants[currIndex];
       setCurrRestaurant({ id, slogan, name, description, image });
     }
-    setIsLoading(false);
   }, [restaurants, currIndex, fiveRestaurants]);
 
   const limitDescription = (content, name) => {
@@ -124,6 +120,7 @@ const HeroSlider = ({ restaurants }) => {
 
 HeroSlider.propTypes = {
   restaurants: PropTypes.array,
+  isLoading: PropTypes.bool,
 };
 
 export default HeroSlider;

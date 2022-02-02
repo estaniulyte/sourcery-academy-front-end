@@ -100,6 +100,7 @@ const Registration = () => {
         const newUserData = {
           userName: inputValues.firstName + " " + inputValues.lastName,
           id: newUserId,
+          userImage: "https://picsum.photos/200",
         };
         saveUserData(newUserData);
 
@@ -159,6 +160,7 @@ const Registration = () => {
                 id="email"
                 name="email"
                 placeholder="email"
+                autoComplete="username"
                 value={inputValues.email}
                 isError={!!inputErrors.email}
                 errorMessage={inputErrors.email}
@@ -172,6 +174,7 @@ const Registration = () => {
                 id="password"
                 name="password"
                 placeholder="password"
+                autoComplete="new-password"
                 value={inputValues.password}
                 isError={!!inputErrors.password}
                 errorMessage={inputErrors.password}
@@ -185,6 +188,7 @@ const Registration = () => {
                 id="repeat-password"
                 name="repeatPassword"
                 placeholder="repeat password"
+                autoComplete="new-password"
                 value={inputValues.repeatPassword}
                 isError={!!inputErrors.repeatPassword}
                 errorMessage={inputErrors.repeatPassword}

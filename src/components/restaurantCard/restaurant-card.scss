@@ -168,7 +168,6 @@ $card-order: 0;
     &__details {
         display: flex;
         flex-direction: column;
-        text-align: justify;
         width: 100%;
 
         &__icon {
@@ -192,7 +191,6 @@ $card-order: 0;
 
         &__description {
             color: $color-slate-gray;
-            font-family: $roboto-light;
             font-size: $body-font-size;
             font-weight: 400;
             height: 72px;

@@ -84,6 +84,7 @@ $color-button-active: darken($color-button-hover, 20%);
 
         &__about {
             color: $color-slate-gray;
+            font-size: $body-font-size;
             line-height: 24px;
             margin: 16px 0;
             max-height: 100px;

@@ -11,6 +11,7 @@ const EatOut = () => {
     "http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/restaurants.json";
 
   const [restaurants, setRestaurants] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchAllData = async () => {
@@ -18,6 +19,7 @@ const EatOut = () => {
       const restaurantsJson = await restaurantsResponse.json();
       const { restaurants } = restaurantsJson;
       setRestaurants(restaurants);
+      setIsLoading(false);
     };
     fetchAllData();
   }, []);
@@ -29,7 +31,7 @@ const EatOut = () => {
       </div>
       <h1 className="eatout__title">Hungry? Find the best place!</h1>
       <div className="eatout__wrapper">
-        <HeroSlider restaurants={restaurants} />
+        <HeroSlider restaurants={restaurants} isLoading={isLoading} />
       </div>
       <div className="eatout__wrapper">
         <CategoriesSection restaurants={restaurants} />

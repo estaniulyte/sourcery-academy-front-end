@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { ReactComponent as HeartIcon } from "assets/icons/heart.svg";
 import profilePicture from "assets/profile-picture.jpg";
 import UserProfileWidget from "components/userProfileWidget";
+import { useAuth } from "features/userData";
 
 import "./user-profile-button.scss";
 
@@ -26,6 +27,8 @@ const UserProfileButton = () => {
     };
   }, []);
 
+  const { userData } = useAuth();
+
   return (
     <div
       className="user-profile-button"
@@ -35,7 +38,11 @@ const UserProfileButton = () => {
       role="button"
       tabIndex={0}
     >
-      <img className="user-profile-button__image" src={profilePicture} alt="" />
+      <img
+        className="user-profile-button__image"
+        src={userData?.userImage || profilePicture}
+        alt="profile pic"
+      />
       <HeartIcon className="user-profile-button__icon" />
       {isComponentVisible && <UserProfileWidget />}
     </div>
