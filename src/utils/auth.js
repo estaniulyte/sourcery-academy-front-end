@@ -40,7 +40,7 @@ export const removeLoggedInUserId = () =>
 
 export const fetchDefaultUserData = async (setState, setIsLoading) => {
   const response = await fetch(
-    "http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/userData.json"
+    "https://estaniulyte.github.io/Data/sourcery-academy-front-end/userData.json"
   );
   const { userData } = await response.json();
   const [userDataObject] = userData;

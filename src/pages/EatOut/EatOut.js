@@ -8,7 +8,7 @@ import "./eatout.scss";
 
 const EatOut = () => {
   const restaurants_url =
-    "http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/restaurants.json";
+    "https://estaniulyte.github.io/Data/sourcery-academy-front-end/restaurants.json";
 
   const [restaurants, setRestaurants] = useState([]);
   const [isLoading, setIsLoading] = useState(true);

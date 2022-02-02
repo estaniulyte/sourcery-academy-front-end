@@ -1,6 +1,6 @@
 export const getDevicesData = async () => {
   const resp = await fetch(
-    "http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/devices.json"
+    "https://estaniulyte.github.io/Data/sourcery-academy-front-end/devices.json"
   );
 
   const data = await resp.json();

@@ -33,7 +33,7 @@ const WeatherWidget = () => {
   const dayOfWeek = date.getDay() || 7;
 
   const weather_url =
-    "http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/weather.json";
+    "https://estaniulyte.github.io/Data/sourcery-academy-front-end/weather.json";
 
   const [weather, setWeather] = useState({
     weekDay: "",

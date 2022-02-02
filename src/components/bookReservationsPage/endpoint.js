@@ -1,6 +1,6 @@
 export const getBooksData = async () => {
   const response = await fetch(
-    "http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/books.json"
+    "https://estaniulyte.github.io/Data/sourcery-academy-front-end/books.json"
   );
 
   const data = await response.json();

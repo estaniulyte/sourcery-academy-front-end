@@ -10,7 +10,7 @@ import "./restaurant-page.scss";
 
 const RestaurantPage = () => {
   const restaurants_url =
-    "http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/restaurants.json";
+    "https://estaniulyte.github.io/Data/sourcery-academy-front-end/restaurants.json";
 
   const [currentRestaurant, setCurrentRestaurant] = useState([]);
 

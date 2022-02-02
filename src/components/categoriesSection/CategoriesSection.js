@@ -5,7 +5,7 @@ import "./categories-section.scss";
 
 const CategoriesSection = ({ restaurants }) => {
   const categoriesUrl =
-    "http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/categories.json";
+    "https://estaniulyte.github.io/Data/sourcery-academy-front-end/categories.json";
 
   const [categories, setCategories] = useState([]);
 

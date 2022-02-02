@@ -7,7 +7,7 @@ import "./eat-out-section.scss";
 
 const EatOutSection = () => {
   const restaurants_url =
-    "http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/restaurants.json";
+    "https://estaniulyte.github.io/Data/sourcery-academy-front-end/restaurants.json";
 
   const [userLikedReastaurants, setUserLikedReastaurants] = useState([]);
   const { userData } = useAuth();
