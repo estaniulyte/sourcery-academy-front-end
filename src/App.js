@@ -4,13 +4,15 @@ import Header from "components/header";
 import Footer from "components/footer";
 import { useAuth } from "features/userData";
 import { PrivateRoutes, PublicRoutes } from "routes";
+import ScrollToTop from "utils/ScrollToTop";
 
 const App = () => {
   const { isLoggedIn, isLoading } = useAuth();
 
   return (
     !isLoading && (
-      <Router>
+      <Router basename="/sourcery-academy-front-end">
+        <ScrollToTop />
         <div className="app">
           {isLoggedIn ? (
             <>
