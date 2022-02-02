@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "555c3d8467bbae057b837711ef9f9862",
+    "revision": "97a016c313bcb809ddef0247d1a23483",
     "url": "/sourcery-academy-front-end/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sourcery-academy-front-end/static/css/2.b0fee516.chunk.css"
   },
   {
-    "revision": "42a244f5d3c0dfe24110",
+    "revision": "9ec77c6b7a6ec47c1788",
     "url": "/sourcery-academy-front-end/static/css/main.47b0931c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sourcery-academy-front-end/static/js/2.d8e48c94.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "42a244f5d3c0dfe24110",
-    "url": "/sourcery-academy-front-end/static/js/main.894792e5.chunk.js"
+    "revision": "9ec77c6b7a6ec47c1788",
+    "url": "/sourcery-academy-front-end/static/js/main.1c230abc.chunk.js"
   },
   {
     "revision": "18246613641c0e7b4f4e",
