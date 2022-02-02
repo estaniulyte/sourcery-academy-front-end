@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sourcery-academy-front-end/static/css/main.47b0931c.chunk.css",
-    "main.js": "/sourcery-academy-front-end/static/js/main.c5413817.chunk.js",
-    "main.js.map": "/sourcery-academy-front-end/static/js/main.c5413817.chunk.js.map",
+    "main.js": "/sourcery-academy-front-end/static/js/main.6997a7e0.chunk.js",
+    "main.js.map": "/sourcery-academy-front-end/static/js/main.6997a7e0.chunk.js.map",
     "runtime-main.js": "/sourcery-academy-front-end/static/js/runtime-main.1d7fe74d.js",
     "runtime-main.js.map": "/sourcery-academy-front-end/static/js/runtime-main.1d7fe74d.js.map",
     "static/css/2.b0fee516.chunk.css": "/sourcery-academy-front-end/static/css/2.b0fee516.chunk.css",
     "static/js/2.d8e48c94.chunk.js": "/sourcery-academy-front-end/static/js/2.d8e48c94.chunk.js",
     "static/js/2.d8e48c94.chunk.js.map": "/sourcery-academy-front-end/static/js/2.d8e48c94.chunk.js.map",
     "index.html": "/sourcery-academy-front-end/index.html",
-    "precache-manifest.ba328c89b9b54a934d3ff365362d41c7.js": "/sourcery-academy-front-end/precache-manifest.ba328c89b9b54a934d3ff365362d41c7.js",
+    "precache-manifest.c0bbd0d15c67371d975db01fd3a26cc2.js": "/sourcery-academy-front-end/precache-manifest.c0bbd0d15c67371d975db01fd3a26cc2.js",
     "service-worker.js": "/sourcery-academy-front-end/service-worker.js",
     "static/css/2.b0fee516.chunk.css.map": "/sourcery-academy-front-end/static/css/2.b0fee516.chunk.css.map",
     "static/css/main.47b0931c.chunk.css.map": "/sourcery-academy-front-end/static/css/main.47b0931c.chunk.css.map",
@@ -102,6 +102,6 @@
     "static/css/2.b0fee516.chunk.css",
     "static/js/2.d8e48c94.chunk.js",
     "static/css/main.47b0931c.chunk.css",
-    "static/js/main.c5413817.chunk.js"
+    "static/js/main.6997a7e0.chunk.js"
   ]
 }
