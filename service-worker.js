@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sourcery-academy-front-end/precache-manifest.3e4c0f36b5b9dabb8bc8cea92aacb8ae.js"
+  "/sourcery-academy-front-end/precache-manifest.a68ec666ab2370506b4877485b5fe493.js"
 );
 
 self.addEventListener('message', (event) => {
