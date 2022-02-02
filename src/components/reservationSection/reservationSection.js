@@ -3,6 +3,7 @@ import MeetingRoom from "assets/icons/reservations-meeting-room.svg";
 import Books from "assets/icons/reservations-book.svg";
 import Devices from "assets/icons/reservations-devices.svg";
 import { useAuth } from "features/userData";
+import { NavLink } from "react-router-dom";
 
 import "./reservation-section.scss";
 
@@ -19,8 +20,8 @@ const ReservationSection = () => {
     <div className="reservation">
       <h2 className="h2-alt-font reservation-header">Reservations</h2>
       <div className="reservation-items">
-        <a
-          href="/reservations/rooms"
+        <NavLink
+          to="/reservations/rooms"
           className="reservation-items-left reservation__link"
         >
           <h2 className="h2-alt-font reservation-header-room">Meeting rooms</h2>
@@ -28,17 +29,17 @@ const ReservationSection = () => {
             {rooms.length} Reserved{" "}
           </p>
           <img src={MeetingRoom} alt=" " />
-        </a>
-        <a
-          href="/reservations/books"
+        </NavLink>
+        <NavLink
+          to="/reservations/books"
           className="reservation-items-middle reservation__link"
         >
           <h2 className="h2-alt-font reservation-header-room">Books</h2>
           <p className="caption reservation-caption">{books.length} Reserved</p>
           <img src={Books} alt=" " />
-        </a>
-        <a
-          href="/reservations/devices"
+        </NavLink>
+        <NavLink
+          to="/reservations/devices"
           className="reservation-items-right reservation__link"
         >
           <h2 className="h2-alt-font reservation-header-room">Devices</h2>
@@ -46,7 +47,7 @@ const ReservationSection = () => {
             {devices.length} Reserved
           </p>
           <img src={Devices} alt=" " />
-        </a>
+        </NavLink>
       </div>
     </div>
   );

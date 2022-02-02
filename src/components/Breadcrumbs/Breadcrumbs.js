@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useLocation } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
+
 import "./breadcrumbs.scss";
 
 const Breadcrumbs = ({ lastLevel }) => {
@@ -12,16 +13,16 @@ const Breadcrumbs = ({ lastLevel }) => {
 
   return (
     <nav className="breadcrumbs">
-      <a href="/" className="breadcrumbs__link">
+      <NavLink to="/" className="breadcrumbs__link">
         <span>Dashboard</span>
-      </a>
-      <a href={linkSecondlvl} className="breadcrumbs__link">
+      </NavLink>
+      <NavLink to={linkSecondlvl} className="breadcrumbs__link">
         <span>{secondLevel}</span>
-      </a>
+      </NavLink>
       {lastLevel && (
-        <a href={locationPathname} className="breadcrumbs__link">
+        <NavLink to={locationPathname} className="breadcrumbs__link">
           <span>{lastLevel}</span>
-        </a>
+        </NavLink>
       )}
     </nav>
   );

@@ -14,6 +14,7 @@ import { ReactComponent as OutlineHeartIcon } from "assets/icons/outline-heart.s
 import Button from "../Button";
 
 import "./restaurant-card.scss";
+import { Link, NavLink } from "react-router-dom";
 
 const RestaurantCard = ({
   restaurant: {
@@ -45,8 +46,8 @@ const RestaurantCard = ({
   return (
     <div className="restaurant-card" data-testid="restaurantCard">
       {id && image && (
-        <a
-          href={"/eat-out/restaurant/" + id}
+        <NavLink
+          to={"/eat-out/restaurant/" + id}
           className="restaurant-card__image-container"
         >
           <img
@@ -56,7 +57,7 @@ const RestaurantCard = ({
             alt="restaurant"
             src={image}
           />
-        </a>
+        </NavLink>
       )}
       {!fullCard && (
         <div className="restaurant-card__check-in" data-testid="checkIn">
@@ -91,7 +92,9 @@ const RestaurantCard = ({
         </div>
         <div className="restaurant-card__description__title-bar">
           <div className="restaurant-card__description__title-bar__title">
-            <a href={"/eat-out/restaurant/" + id}>{name}</a>
+            <a href={"/sourcery-academy-front-end/eat-out/restaurant/" + id}>
+              {name}
+            </a>
           </div>
           <div className="restaurant-card__description__title-bar__icon">
             {liked ? <FilledHeartIcon /> : <OutlineHeartIcon />}
@@ -122,15 +125,15 @@ const RestaurantCard = ({
               {description}
             </div>
             <div className="restaurant-card__details__buttons">
-              <a href={"/eat-out/restaurant/" + id}>
+              <Link to={"/eat-out/restaurant/" + id}>
                 <Button
                   size="medium"
                   type="text"
-                  href={"/eat-out/restaurant/" + id}
+                  href={"/sourcery-academy-front-end/eat-out/restaurant/" + id}
                 >
                   Read more
                 </Button>
-              </a>
+              </Link>
               <Button size="medium" to="/eat-out">
                 Check-in
               </Button>
