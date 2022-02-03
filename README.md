@@ -1,7 +1,7 @@
-🚨 Be sure to update this file according to your team.
+## About project
 
 ## Run the project
-* To run this project you will need [Node](https://nodejs.org/en/). We strongly recommend to use [nvm](https://github.com/nvm-sh/nvm) for installing node.
+* To run this project you will need [Node](https://nodejs.org/en/). Strongly recommended to use [nvm](https://github.com/nvm-sh/nvm) for installing node.
 * After installing nvm go to project directory and run:
     * `nvm install [version in .nvmrc file]`
     * `nvm use`
@@ -39,46 +39,3 @@ Runs all linters and prettier and shows any warnings/errors in console.
 
 Runs storybook for development.
 
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-## Git Guidelines
-
-New features should be developed in separate branches starting with the `feature/` prefix, for example: `feature/SFE21V-7-Main-layout`. The `SFE21V-7` part is an issue number from JIRA, if there's no issue for this feature, feature key can be omitted.
-
-Bugs should be fixed in related feature branches if the branch is not merged yet or in separate branches named with `bugfix/` prefix.
-
-Start commit messages with `JIRA issue number` + `Fix`, `Add`, `Remove`, `Change`, etc. instead of `Fixed`, `Added`, `Removed`, `Changed`.
-
-Commit messages should describe what will be done with this commit. Some examples:
-
-* SFE21V-7 Add lodash to devDependencies
-* SFE21V-7 Fix memory-leak in worker tasks
-* SFE21V-7 Remove lodash from devDependencies
-* SFE21V-7 Add functionality for pausing worker tasks
-* SFE21V-7 Change the layout of the dashboard page
-
-You may specify multiple issue number if commit is relevant for them or if using subtasks:
-
-* SFE21V-7, SFE21V-8 Change the layout of the dashboard page
-
-This enables to easily locate branch or related commits directly from JIRA story or lookup story when looking at commit history.
-
-## Endpoints
-
-http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/userData.json
-
-http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/categories.json
-
-http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/devices.json
-
-http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/books.json
-
-http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/restaurants.json
-
-http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/rooms.json
-
-http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/stories.json
-
-http://frontendsourceryweb.s3-website.eu-central-1.amazonaws.com/weather.json
