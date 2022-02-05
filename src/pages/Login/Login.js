@@ -11,8 +11,8 @@ import "./login.scss";
 
 const Login = () => {
   const initialValues = {
-    email: "",
-    password: "",
+    email: "demo@email.com",
+    password: "demo@email.com",
   };
 
   const { logIn } = useAuth();
