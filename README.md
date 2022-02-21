@@ -2,6 +2,8 @@
 
 Project created with React during Front-End courses in Sourcery Academy (Devbridge)'21
 
+The project is hosted with Github Pages and can be observed [here](https://estaniulyte.github.io/sourcery-academy-front-end/).
+
 ## Project Features
 
 - Interactive Dashboard
