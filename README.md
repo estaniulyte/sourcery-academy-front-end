@@ -29,3 +29,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 Desktop:
 
 ![9bb93c77471485fde684be33adacc21c](https://github.com/estaniulyte/sourcery-academy-front-end/assets/43463977/1785f17b-e90b-40dc-89b0-6e49f3ffff86)
+
+
+<img width="1470" alt="Screenshot 2023-06-24 at 22 26 53" src="https://github.com/estaniulyte/sourcery-academy-front-end/assets/43463977/a9292f06-8398-401e-9151-e9669616bec1">
